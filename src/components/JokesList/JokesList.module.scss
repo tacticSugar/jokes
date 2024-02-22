@@ -1,0 +1,26 @@
+.jokesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  & > a:nth-child(-n + 2) {
+    width: calc(50% - 10px);
+    height: 260px;
+    padding: 40px;
+  }
+  & > div:nth-child(-n + 2) {
+    width: calc(50% - 10px);
+    height: 260px;
+    border-radius: 8px;
+  }
+
+  & > a:nth-child(n + 3) {
+    width: calc(33.333% - 15px);
+    height: 150px;
+    padding: 30px;
+  }
+}

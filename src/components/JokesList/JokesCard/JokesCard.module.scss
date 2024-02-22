@@ -1,0 +1,23 @@
+@import 'styles/variables';
+
+.jokesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+  color: $black;
+  font-weight: 400;
+}
+
+.jokeValue {
+  width: 100%;
+}
+
+.jokeDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  span {
+    color: $gray-main;
+  }
+}

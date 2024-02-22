@@ -1,4 +1,4 @@
-import Container from '@/src/components/Container/Container'
+import Container from '@/src/components/_base/Container/Container'
 import JokesList from '@/src/components/JokesList/JokesList'
 import SearchJokesWizard from '@/src/components/SearchJokesWizard/SearchJokesWizard'
 import type { FC } from 'react'

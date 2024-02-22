@@ -1,6 +1,6 @@
 import { QUERY_KEY_SEARCH_JOKES } from './useSearchJokes'
 
-type Joke = {
+export type Joke = {
   categories: string[]
   created_at: string
   icon_url: string
