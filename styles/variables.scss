@@ -1,0 +1,57 @@
+///////////////////////////////////          COLORS
+
+// --Whites
+$bad-white: #f1f1f1;
+$white: #ffffff;
+
+// --Black
+$black: #282626;
+$totally-black: #000000;
+
+// --Grays
+$gray-main: #767676;
+$gray-dark: #575757;
+
+// --Blues
+$blue-light: #656ec2;
+$blue-main: #007aff;
+
+$box-shadow: 0 7px 12px 0 #64646f33;
+
+///////////////////////////////////          FONT-SIZE
+$text-sm: 12px;
+$text-md: 20px;
+$text-xl: 32px;
+
+///////////////////////////////////          BREAKPOINTS
+$mobile: 769px;
+$tablet: 1025px;
+$desktop: 1441px;
+
+//Mixins //----------PC FIRST
+@mixin max_custom($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+@mixin max_mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+@mixin max_tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin max_desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+:export {
+  mobile: $mobile;
+  tablet: $tablet;
+  desktop: $desktop;
+}

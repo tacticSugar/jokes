@@ -1,0 +1,12 @@
+@import 'styles/variables';
+
+.searchJokesInput {
+  padding: 20px 35px;
+  box-shadow: $box-shadow;
+  color: $blue-light;
+  width: 100%;
+  font-size: $text-md;
+  &::placeholder {
+    color: $blue-light;
+  }
+}
