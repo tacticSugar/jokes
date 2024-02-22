@@ -1,3 +1,8 @@
+@import 'styles/variables';
+
 .jokesCount {
   padding-left: 40px;
+  @include max_mobile {
+    padding-left: 0;
+  }
 }
