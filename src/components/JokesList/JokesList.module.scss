@@ -34,5 +34,9 @@
     width: calc(50% - 10px);
     height: 260px;
     border-radius: 8px;
+    @include max_tablet {
+      width: 100%;
+      height: 180px;
+    }
   }
 }

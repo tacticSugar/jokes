@@ -17,7 +17,6 @@ const JokesList = () => {
   const { data, isLoading } = useSearchJokes({
     query: router?.query?.query as string,
   })
-
   if (!data && !isLoading) return null
 
   setCount({ count: data?.total })
@@ -27,7 +26,7 @@ const JokesList = () => {
       {isLoading
         ? times(2).map(() => <LoaderQuery isLoading={isLoading} />)
         : data?.result.map((joke) => <JokesCard {...joke} />)}
-      {!data?.total && <span>No jokes here, fellow</span>}
+      {!data?.total && !isLoading && <span>No jokes here</span>}
     </ul>
   )
 }
